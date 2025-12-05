@@ -1,114 +1,154 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="asset/css/base.css">
-    <link rel="stylesheet" href="asset/css/style.css">
     <title>Nguyễn Văn Phương</title>
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #062b35, #632a56);
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .profile-card {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        transition: 0.3s;
+      }
+
+      .profile-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+      }
+
+      .profile-card img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+      }
+
+      h1 {
+        margin-top: 20px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .love-section {
+        margin-top: 40px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.07);
+        border-radius: 15px;
+        font-size: 18px;
+        line-height: 1.8;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(10px);
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        color: #ccc;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+    </style>
   </head>
+
   <body>
 
-  <div class="background">
-    <audio id="background-music"  autoplay loop>
+    <!-- AUTO MUSIC -->
+    <audio id="background-music" autoplay loop>
       <source src="asset/videos/thangmay.mp3" type="audio/mpeg">
-      Trình duyệt của bạn không hỗ trợ phần tử âm thanh.
-  </audio>
-
-
-    <div class="section-one">
-      <div class="container">
-          <div class="inner-image">
-              <img src="asset/images/phương.jpg" alt="Đây là Phương">
-          </div>
-          <h1 class="inner-title">Đây là Nguyễn Văn Phương</h1>
-          <p class="inner-desc">Quê quán: Quãng Nam
-              <br>
-              Giới Tính: Nam
-              <br>
-              Tuổi : 21
-              <br>
-              Tình trạng :đã có người yêu 
-              <br>
-          </p>
-      </div>
-    </div>
-  
-  
-    <div class="section-two">
-        <div class="container">
-          <div class="inner-image">
-              <img src="asset/images/nyphuong.jpg" alt="Đây là Phương">
-          </div>
-          <h1 class="inner-title">Đây là người yêu của phương (Nấm) </h1>
-          <p class="inner-desc">Quê quán: không rõ
-              <br>
-              Giới Tính: Nữ
-              <br>
-              Tuổi : không rõ
-              <br>
-              Tình trạng : người yêu của phương
-              <br>
-          </p>
-      </div>
-    </div>
-      
-    <div class="section-three">
-      <div class="container">
-        <div class="inner-image">
-            <img src="asset/images/z4330701387616_42edb2ef9746bbcc05b66a7c544a7460.jpg" alt="Đây là Phúc">
-        </div>
-        <h1 class="inner-title">Đây là Đặng Xuân Phúc</h1>
-        <p class="inner-desc">Quê quán: Quãng Nam
-            <br>
-            Giới Tính: Nam
-            <br>
-            Tuổi : 20
-            <br>
-            Tình trạng : chưa có con nào yêu
-            <br>
-        </p>
-    </div>
-    </div>
-  
-    <div class="section-four">
-      <h3 class="inner-title">
-        Tôi là người viết bài này : tôi muốn nói về thèn bạn mất dạy có người yêu phát cơm chóooooo. Nhưng mà thôi cũng kệ vì bạn Phương rất chịu khó nỗ lực trong cuộc sống và đã truyền đạt cho mình nhiều kinh nghiệm cuộc sống hay sẵng sàng giúp đỡ nếu anh em cần <i class="fa-solid fa-face-smile-wink"></i>. !!!!
-      </h3>
-    </div>
-
-
-
+    </audio>
     <script>
       document.body.addEventListener('click', function() {
-          var audio = document.getElementById('background-music');
-          audio.play();
+        var audio = document.getElementById('background-music');
+        audio.play();
       }, { once: true });
-  </script>
-  </div>
-   
+    </script>
 
+    <div class="container">
 
+      <div class="hero">
+        <h1 class="section-title">🌟 GIỚI THIỆU BẠN BÈ 🌟</h1>
+      </div>
 
+      <!-- PHƯƠNG -->
+      <div class="profile-card mt-4 text-center">
+        <img src="asset/images/phương.jpg" alt="Phương">
+        <h1>Đây là Nguyễn Văn Phương</h1>
+        <p>
+          Quê quán: Quảng Nam <br>
+          Giới tính: Nam <br>
+          Tuổi: 21 <br>
+          Tình trạng: Đã có người yêu ❤️
+        </p>
+      </div>
 
+      <!-- NY PHƯƠNG -->
+      <div class="profile-card mt-5 text-center">
+        <img src="asset/images/nyphuong.jpg" alt="Nấm">
+        <h1>Người yêu của Phương (Nấm) 💕</h1>
+        <p>
+          Quê quán: Huế <br>
+          Giới tính: Nữ <br>
+          Tuổi: 21 <br>
+          Tình trạng: Người yêu của Phương
+        </p>
+      </div>
 
+      <!-- PHÚC -->
+      <div class="profile-card mt-5 text-center">
+        <img src="asset/images/phuc.png" alt="Phúc">
+        <h1>Đây là Đặng Xuân Phúc</h1>
+        <p>
+          Quê quán: Quảng Nam <br>
+          Giới tính: Nam <br>
+          Tuổi: 20 <br>
+          Tình trạng: Chưa có ai yêu 😢
+        </p>
+      </div>
 
+      <!-- LỜI NGƯỜI VIẾT -->
+      <div class="love-section mt-5">
+        Tôi là người viết bài này. Tôi muốn nói về thằng bạn mất dạy có người yêu và phát cơm chó liên tục 🤣. Nhưng nói gì thì nói, bạn Phương rất chịu khó, nỗ lực trong cuộc sống và luôn sẵn sàng giúp đỡ anh em khi cần. Quý trọng điều đó lắm luôn <i class="fa-solid fa-face-smile-wink"></i>.
+      </div>
 
+      <footer>
+        © 2025 - Website giới thiệu bạn bè bởi Phúc Đặng 😎
+      </footer>
 
+    </div>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>
-
-
